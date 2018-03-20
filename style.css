@@ -1,0 +1,137 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+/* Start your base/mobile styles here */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: justify;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  max-width: 650px;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100px text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.byline {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.cap {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 10px;
+  color: #999999;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+div.hotspot {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+div.hotspot img {
+  width: 100%;
+}
+
+div.modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 200%;
+  left: 0;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: top 0.5s ease-in-out;
+}
+
+div.modal.active {
+  top: 0;
+}
+
+div.modal div.inner {
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 1em;
+}
+
+/*without the space it would get both modal and inner*/
+
+.spot {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* what the following stuff means*/
+
+/* top indicates how far the bottom is from the top*/
+
+/* right/left indicates how far the bottom is from the margins*/
+
+/* background color:you can select your own color from the palette*/
+
+#fact1 {
+  top: 15%;
+  left: 25%;
+  background-color: #164d36;
+}
+
+#fact2 {
+  top: 70%;
+  left: 39%;
+  background-color: #e8e8ee;
+}
+
+#fact3 {
+  top: 57%;
+  right: 44%;
+  background-color: #f20a28;
+}
+
+@media(min-width: 681px) {}
+
+@media(min-width: 729px) {
+  #maincontent {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .byline {
+    text-align: center;
+    margin: 0 auto;
+  }
