@@ -11,18 +11,19 @@ html {
 }
 
 body {
-  display: table-cell;
-  vertical-align: justify;
+  line-height: 1;
+  padding: 0.4em;
 }
 
 p {
   font-family: 'Raleway', sans-serif;
   max-width: 650px;
+  text-align: left;
 }
 
 h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 100px text-transform: uppercase;
+  font-size: 90px text-transform: uppercase;
   text-align: center;
 }
 
@@ -49,12 +50,14 @@ img {
 .cap {
   font-family: 'Raleway', sans-serif;
   font-style: italic;
-  font-size: 10px;
+  font-size: 15px;
   color: #999999;
   margin-top: 15px;
   margin-bottom: 20px;
   text-align: center;
 }
+
+/* beginning of hotspot work */
 
 div.hotspot {
   position: relative;
@@ -88,8 +91,6 @@ div.modal div.inner {
   padding: 1em;
 }
 
-/*without the space it would get both modal and inner*/
-
 .spot {
   position: absolute;
   height: 50px;
@@ -97,13 +98,7 @@ div.modal div.inner {
   border-radius: 50%;
 }
 
-/* what the following stuff means*/
-
-/* top indicates how far the bottom is from the top*/
-
-/* right/left indicates how far the bottom is from the margins*/
-
-/* background color:you can select your own color from the palette*/
+/* hot spot style */
 
 #fact1 {
   top: 15%;
@@ -117,11 +112,26 @@ div.modal div.inner {
   background-color: #e8e8ee;
 }
 
-#fact3 {
-  top: 57%;
-  right: 44%;
-  background-color: #f20a28;
+/* end of hotspots work */
+
+/* pull quote begins here */
+
+.thick-line {
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  width: 40%;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 10px;
+  border-color: blue;
+  padding: 20px 0px 20px 30px;
+  margin-left: 1%;
+  margin-right: 5%;
+  text-align: left;
 }
+
+/* pull quote work ends here */
 
 @media(min-width: 681px) {}
 
